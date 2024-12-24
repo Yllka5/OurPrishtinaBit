@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    background-color: #eee;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title,
+.logo{
+    font-size: 42px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.menu a:hover{
+    color: darkblue;
+    border-bottom: 1px solid #eee;
+}
+.header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.itl.cat/pngfile/big/4-42319_view-pixels8-animated-8-bit-background.gif);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: top;
+}
+.header-foods{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/047/142/060/original/darius-anton-coffee-01.gif?1646856903);
+}
+.header-parks
+{
+    background-image: url(https://i.redd.it/wstrohqh6ud71.gif);
+}
+.services{
+    background-color: #000000;
+    padding: 30px 0;
+
+    
+}
+.services h2{
+    color: lightcyan;
+    text-align: center;
+}
+.row,
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col-4{
+    width:33.33%;
+}
+.card{
+    margin: 8px;
+    padding: 25px 10px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    
+
+}
+.hero{
+    background-color: #082020;
+    padding: 50px 0;
+    
+}
+.col-6{
+    width: 50%;
+
+}
+.hero-img{
+    width :calc(100% - 16px) ;
+    height: 350px;
+    object-fit: cover;
+    margin: 8px;
+}
+.hero h2{
+    color: #097e8dfa;
+    text-align: center;
+    padding-top: 30px;
+
+
+
+
+}
+.hero p{
+    color: #ffff;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.hero a{
+    padding-left: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+.hero a span{
+    background-color: #097e8dfa;
+    height: 3px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.hero h3{
+    margin: 0;
+    padding: 0 8px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+.footer-menu a,
+.social-media a {
+    font-size: 18px;
+    padding: 8px;
+    color:#097e8dfa ;
+    text-decoration: none;
+
+}
+.foods{
+    background-color: #082020;
+    padding: 40px 0;
+}
+.food-card{
+    margin: 30px;
+    height: 320px;
+    position: relative;
+}
+.food-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s
+    ease-in-out;
+
+    z-index: 1;
+}
+.food-content{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    background-color: #ffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    transition: all 0.5s
+    ease-in-out;
+}
+.food-content h3{
+    margin: 0;
+
+}
+.food-content p{
+    margin: 10px;
+}
+.food-card:hover img{
+    top: -30px;
+    left: -30px;
+
+}
+.food-card:hover .food-content{
+    top: 30px;
+    left: 30px;
+
+}
+.parks{
+    padding: 50px 0;
+    background-color: antiquewhite;
+
+}
+.park-card{
+    margin: 4px;
+    padding: 8px;
+
+    background-color: #000000;
+color: #ffff;
+}
+.park-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.park-btn{
+    padding: 5px 25px;
+    text-transform: uppercase;
+    
+}
